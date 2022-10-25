@@ -20,7 +20,7 @@ class Welcome extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 34),
         ),
         const Text(
-          'Automatic identity verification whic enable you to verify your identity',
+          'Automatic identity verification which enable you to verify your identity',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 18),
         ),
