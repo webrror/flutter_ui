@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/register.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_1/login.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class Register extends StatelessWidget {
+  const Register({super.key});
 
-  @override
-  State<Login> createState() => _LoginState();
-}
-
-class _LoginState extends State<Login> {
-  bool _passView = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: const Text('Register'),
         elevation: 0,
         //backgroundColor: Colors.black87,
       ),
@@ -24,7 +20,7 @@ class _LoginState extends State<Login> {
             const Padding(
               padding: EdgeInsets.all(50.0),
               child: Text(
-                'Login to your account',
+                'Register with your email',
                 style: TextStyle(fontSize: 20),
               ),
             ),
@@ -44,22 +40,27 @@ class _LoginState extends State<Login> {
                   const EdgeInsets.symmetric(horizontal: 40.0, vertical: 10),
               child: TextField(
                 obscuringCharacter: '*',
-                obscureText: _passView,
+                obscureText: true,
                 decoration: InputDecoration(
                     prefixIcon: const Icon(Icons.lock_person_rounded),
-                    suffixIcon: IconButton(
-                      tooltip: 'Password visibility',
-                      onPressed: () {
-                        setState(() {
-                          _passView ? _passView = false : _passView = true;
-                        });
-                      },
-                      icon: _passView
-                          ? const Icon(Icons.remove_red_eye_rounded)
-                          : const Icon(Icons.visibility_off_rounded),
-                    ),
+                    //suffixIcon: const Icon(Icons.remove_red_eye_rounded),
                     //hintText: 'Password',
                     label: const Text('Password'),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10))),
+              ),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 40.0, vertical: 10),
+              child: TextField(
+                obscuringCharacter: '*',
+                obscureText: true,
+                decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.lock_person_rounded),
+                    //suffixIcon: const Icon(Icons.remove_red_eye_rounded),
+                    //hintText: 'Password',
+                    label: const Text('Confirm Password'),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10))),
               ),
@@ -71,24 +72,21 @@ class _LoginState extends State<Login> {
                 width: double.infinity,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      //padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-                      backgroundColor: Colors.deepPurple,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50))),
-                  child: const Text('Login'),
-                ),
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        //padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                        backgroundColor: Colors.deepPurple,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50))),
+                    child: Text('Register')),
               ),
             ),
             TextButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Register()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Login()));
                 },
-                child: Text('New User? Register'))
+                child: Text('Already registered? Login'))
           ],
         ),
       ),

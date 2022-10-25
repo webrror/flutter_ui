@@ -1,22 +1,78 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/register.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          'Welcome User!',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 30
+    return Scaffold(
+        // appBar: AppBar(
+        //   backgroundColor: Colors.transparent,
+        //   elevation: 0,
+        // ),
+        body: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        const Text(
+          'Welcome!',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 34),
+        ),
+        const Text(
+          'Automatic identity verification whic enable you to verify your identity',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 18),
+        ),
+        Image.asset(
+          'assets/images/introduction.png',
+          width: 200,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              SizedBox(
+                width: double.infinity,
+                height: 60,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Login()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      //padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                      backgroundColor: Colors.blueAccent,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50))),
+                  child: const Text('Login'),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 60,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Register()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      //padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                      backgroundColor: Colors.redAccent,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50))),
+                  child: const Text('Register'),
+                ),
+              )
+            ],
           ),
         ),
-      ),
-    );
+      ],
+    ));
   }
 }

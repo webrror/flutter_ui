@@ -30,7 +30,7 @@ class _SplashState extends State<Splash> {
     Timer(const Duration(milliseconds: 3000), () {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const Login()));
+          context, MaterialPageRoute(builder: (context) => const Welcome()));
     });
     super.initState();
   }
