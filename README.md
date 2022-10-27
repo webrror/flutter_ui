@@ -1,7 +1,22 @@
-# flutter_application_1
+# flutter_ui
 
-A new Flutter project.
+A new Flutter project showcasing different UI examples.
 
 ## Screenshots
 
-<img src="/screenshots/1.png" width="200">  <img src="/screenshots/2.png" width="200">  <img src="/screenshots/3.png" width="200">  <img src="/screenshots/4.png" width="200">
+<table>
+  <tr>
+    <td align="center">Splash Screen</td>
+    <td align="center">Welcome Screen</td>
+    <td align="center">Login Form</td>
+    <td align="center">Sign Up Form</td>
+    <td align="center">ListTile Example</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/1.png" width=200></td>
+    <td align="center"><img src="screenshots/2.png" width=200></td>
+    <td align="center"><img src="screenshots/3.png" width=200></td>
+    <td align="center"><img src="screenshots/4.png" width=200></td>
+    <td align="center"><img src="screenshots/5.png" width=200></td>
+  </tr>
+</table>
