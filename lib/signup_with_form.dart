@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/login_with_form.dart';
 import 'package:flutter_application_1/welcome.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-class SignUpWithValidation extends StatelessWidget {
+class SignUpWithValidation extends StatefulWidget {
   const SignUpWithValidation({super.key});
 
   @override
+  State<SignUpWithValidation> createState() => _SignUpWithValidationState();
+}
+
+class _SignUpWithValidationState extends State<SignUpWithValidation> {
+  bool _passView = true;
+  bool _confirmpassView = true;
+  final emailController = TextEditingController();
+  final passController = TextEditingController();
+  final confirmPassController = TextEditingController();
+  var formKey = GlobalKey<FormState>();
+  @override
   Widget build(BuildContext context) {
-    var formKey = GlobalKey<FormState>();
-    final emailController = TextEditingController();
-    final passController = TextEditingController();
-    final confirmPassController = TextEditingController();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Signup with validation'),
@@ -57,9 +62,20 @@ class SignUpWithValidation extends StatelessWidget {
                 ),
                 TextFormField(
                   controller: passController,
-                  obscureText: true,
+                  obscureText: _passView,
                   decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.lock_person_rounded),
+                      suffixIcon: IconButton(
+                        tooltip: 'Password visibility',
+                        onPressed: () {
+                          setState(() {
+                            _passView ? _passView = false : _passView = true;
+                          });
+                        },
+                        icon: _passView
+                            ? const Icon(Icons.remove_red_eye_rounded)
+                            : const Icon(Icons.visibility_off_rounded),
+                      ),
                       labelText: 'Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10))),
@@ -77,9 +93,22 @@ class SignUpWithValidation extends StatelessWidget {
                 ),
                 TextFormField(
                   controller: confirmPassController,
-                  obscureText: true,
+                  obscureText: _confirmpassView,
                   decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.lock_person_rounded),
+                      suffixIcon: IconButton(
+                        tooltip: 'Password visibility',
+                        onPressed: () {
+                          setState(() {
+                            _confirmpassView
+                                ? _confirmpassView = false
+                                : _confirmpassView = true;
+                          });
+                        },
+                        icon: _confirmpassView
+                            ? const Icon(Icons.remove_red_eye_rounded)
+                            : const Icon(Icons.visibility_off_rounded),
+                      ),
                       labelText: 'Confirm Password',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10))),

@@ -6,8 +6,15 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 import 'contact_list.dart';
 
-class LoginWithValidation extends StatelessWidget {
+class LoginWithValidation extends StatefulWidget {
+  @override
+  State<LoginWithValidation> createState() => _LoginWithValidationState();
+}
+
+class _LoginWithValidationState extends State<LoginWithValidation> {
   var formKey = GlobalKey<FormState>();
+  bool _passView = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,9 +59,22 @@ class LoginWithValidation extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10.0),
                     child: TextFormField(
-                      obscureText: true,
+                      obscureText: _passView,
                       decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.lock_person_rounded),
+                          suffixIcon: IconButton(
+                            tooltip: 'Password visibility',
+                            onPressed: () {
+                              setState(() {
+                                _passView
+                                    ? _passView = false
+                                    : _passView = true;
+                              });
+                            },
+                            icon: _passView
+                                ? const Icon(Icons.remove_red_eye_rounded)
+                                : const Icon(Icons.visibility_off_rounded),
+                          ),
                           labelText: 'Password',
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10))),
