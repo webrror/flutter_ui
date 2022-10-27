@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/login_with_form.dart';
 import 'package:flutter_application_1/welcome.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/icon_park_twotone.dart';
@@ -30,7 +31,8 @@ class _SplashState extends State<Splash> {
     Timer(const Duration(milliseconds: 3000), () {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const Welcome()));
+          context,
+          MaterialPageRoute(builder: (context) => LoginWithValidation()));
     });
     super.initState();
   }
