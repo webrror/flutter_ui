@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ContactList extends StatelessWidget {
@@ -32,12 +33,28 @@ class ContactList extends StatelessWidget {
             ),
             title: const Text('John'),
             subtitle: const SelectableText('+91 39872 53423'),
-            trailing: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.call_rounded,
-                  color: Colors.deepPurple,
-                )),
+            trailing: Wrap(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.chat_bubble_fill,
+                      color: Colors.deepPurple,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.phone_fill,
+                      color: Colors.deepPurple,
+                    ))
+              ],
+            ),
+            // trailing: IconButton(
+            //     onPressed: () {},
+            //     icon: const Icon(
+            //       Icons.call_rounded,
+            //       color: Colors.deepPurple,
+            //     )),
           ),
           const Divider(),
           ListTile(
@@ -49,12 +66,22 @@ class ContactList extends StatelessWidget {
             ),
             title: const Text('Lucas'),
             subtitle: const SelectableText('+91 99872 52489'),
-            trailing: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.call_rounded,
-                  color: Colors.deepPurple,
-                )),
+            trailing: Wrap(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.chat_bubble_fill,
+                      color: Colors.deepPurple,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.phone_fill,
+                      color: Colors.deepPurple,
+                    ))
+              ],
+            ),
           ),
           const Divider(),
           ListTile(
@@ -66,12 +93,22 @@ class ContactList extends StatelessWidget {
             ),
             title: const Text('Maxine'),
             subtitle: const SelectableText('+91 98957 53477'),
-            trailing: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.call_rounded,
-                  color: Colors.deepPurple,
-                )),
+            trailing: Wrap(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.chat_bubble_fill,
+                      color: Colors.deepPurple,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.phone_fill,
+                      color: Colors.deepPurple,
+                    ))
+              ],
+            ),
           ),
           const Divider(),
           ListTile(
@@ -83,12 +120,22 @@ class ContactList extends StatelessWidget {
             ),
             title: const Text('Mark'),
             subtitle: const SelectableText('+91 32555 29746'),
-            trailing: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.call_rounded,
-                  color: Colors.deepPurple,
-                )),
+            trailing: Wrap(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.chat_bubble_fill,
+                      color: Colors.deepPurple,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.phone_fill,
+                      color: Colors.deepPurple,
+                    ))
+              ],
+            ),
           ),
           const Divider(),
           ListTile(
@@ -100,12 +147,22 @@ class ContactList extends StatelessWidget {
             ),
             title: const Text('Stephanie'),
             subtitle: const SelectableText('+91 90874 32083'),
-            trailing: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.call_rounded,
-                  color: Colors.deepPurple,
-                )),
+            trailing: Wrap(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.chat_bubble_fill,
+                      color: Colors.deepPurple,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.phone_fill,
+                      color: Colors.deepPurple,
+                    ))
+              ],
+            ),
           ),
         ],
       ),
