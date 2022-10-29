@@ -7,47 +7,300 @@ class CardsSample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<IconData> list1icons = [
-      Icons.camera,
-      Icons.chair_rounded,
-      Icons.alarm
-    ];
-    List<String> list1text = ['Camera', 'Chair', 'Alarm'];
-    List<IconData> list2icons = [
-      Icons.camera,
-      Icons.chair_rounded,
-      Icons.alarm
-    ];
-    List<String> list2text = ['Camera', 'Chair', 'Alarm'];
+    var screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Container(
-        color: Colors.black26,
-        width: double.infinity,
-        height: double.infinity,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            ListView.builder(
-                itemCount: list1icons.length,
-                itemBuilder: (context, index) {
-                  return Card(
-                    child: ListTile(
-                      leading: Icon(list1icons[index]),
-                      title: Text(list1text[index]),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.home),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
                     ),
-                  );
-                }),
-            ListView.builder(
-                itemCount: list1icons.length,
-                itemBuilder: (context, index) {
-                  return Card(
-                    child: ListTile(
-                      leading: Icon(list1icons[index]),
-                      title: Text(list1text[index]),
+                  ),
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.orange,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.alarm),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
                     ),
-                  );
-                }),
-          ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.camera_outlined),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.pink,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.airplane_ticket),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.redAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.network_wifi_rounded),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.lightBlueAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.book),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.purpleAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.phone),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.greenAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.mail),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.map),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.redAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.memory),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.pinkAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.mic_off_rounded),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 60,
+                    width: screenWidth / 2.3,
+                    decoration: BoxDecoration(
+                        color: Colors.lightGreenAccent,
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.dashboard_customize_rounded),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Heart Shaker',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
