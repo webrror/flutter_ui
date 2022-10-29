@@ -13,9 +13,9 @@ class SignUpWithValidation extends StatefulWidget {
 class _SignUpWithValidationState extends State<SignUpWithValidation> {
   bool _passView = true;
   bool _confirmpassView = true;
-  final emailController = TextEditingController();
-  final passController = TextEditingController();
-  final confirmPassController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passController = TextEditingController();
+  TextEditingController confirmPassController = TextEditingController();
   var formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -133,10 +133,23 @@ class _SignUpWithValidationState extends State<SignUpWithValidation> {
                     onPressed: () {
                       final isValid = formKey.currentState!.validate();
                       if (isValid) {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Welcome()));
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            elevation: 2,
+                            behavior: SnackBarBehavior.floating,
+                            content: const Text('Successfully Registered!'),
+                            action: SnackBarAction(
+                              label: 'Close',
+                              onPressed: () {
+                                // Code to execute.
+                              },
+                            ),
+                          ),
+                        );
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => const Welcome()));
                       } else {
                         Fluttertoast.showToast(
                             msg: 'Signup failed',

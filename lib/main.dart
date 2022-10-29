@@ -3,8 +3,12 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/Listview/movie_list_builder.dart';
+import 'package:flutter_application_1/cards_sample.dart';
+import 'package:flutter_application_1/Listview/contact_list.dart';
 import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/login_with_form.dart';
+import 'package:flutter_application_1/Listview/lvbuilder.dart';
 import 'package:flutter_application_1/welcome.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/icon_park_twotone.dart';
@@ -27,16 +31,17 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
-  // @override
-  // void initState() {
-  //   Timer(const Duration(milliseconds: 10000), () {
-  //     //Navigator.pushNamed(context, routeName);
-  //     Navigator.pushReplacement(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => LoginWithValidation()));
-  //   });
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    Timer(const Duration(milliseconds: 2000), () {
+      //Navigator.pushNamed(context, routeName);
+      Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+              builder: (context) => const MovieListWithBuilder()));
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

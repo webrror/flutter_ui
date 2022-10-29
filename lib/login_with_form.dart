@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/fruit_list.dart';
+import 'package:flutter_application_1/Listview/fruit_list.dart';
 import 'package:flutter_application_1/signup_with_form.dart';
 import 'package:flutter_application_1/welcome.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import 'contact_list.dart';
+import 'Listview/contact_list.dart';
 
 class LoginWithValidation extends StatefulWidget {
   @override
