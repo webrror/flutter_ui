@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class CardsSample extends StatelessWidget {
   const CardsSample({super.key});
@@ -17,284 +15,344 @@ class CardsSample extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.home),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.home),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.orange,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.alarm),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.camera_outlined),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.pink,
-                        borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.airplane_ticket),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.alarm),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 15,
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.redAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.network_wifi_rounded),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.camera_outlined),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.lightBlueAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.book),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.pink,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.airplane_ticket),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 15,
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.purpleAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.phone),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.redAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.network_wifi_rounded),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.greenAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.mail),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.lightBlueAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.book),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 15,
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.amber,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.map),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.purpleAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.phone),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.redAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.memory),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.greenAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.mail),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 15,
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.pinkAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.mic_off_rounded),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.amber,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.map),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 60,
-                    width: screenWidth / 2.3,
-                    decoration: BoxDecoration(
-                        color: Colors.lightGreenAccent,
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.dashboard_customize_rounded),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Heart Shaker',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.redAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.memory),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.pinkAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.mic_off_rounded),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Container(
+                      height: 60,
+                      width: screenWidth / 2.3,
+                      decoration: BoxDecoration(
+                          color: Colors.lightGreenAccent,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.dashboard_customize_rounded),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Heart Shaker',
+                            style: TextStyle(fontSize: 16),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
