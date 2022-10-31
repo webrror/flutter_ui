@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_application_1/Listview/listtest.dart';
 import 'package:flutter_application_1/Listview/lvseperator.dart';
 import 'package:flutter_application_1/Listview/movie_list_builder.dart';
+import 'package:flutter_application_1/Whatsapp/home.dart';
 import 'package:flutter_application_1/bottom_navbar.dart';
 import 'package:flutter_application_1/cards_sample.dart';
 import 'package:flutter_application_1/Listview/contact_list.dart';
@@ -18,7 +19,11 @@ import 'package:iconify_flutter/icons/icon_park_twotone.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(primarySwatch: Colors.deepPurple, useMaterial3: true),
+    
+    theme: ThemeData(
+      primarySwatch: Colors.teal,
+      useMaterial3: true,
+    ),
     debugShowCheckedModeBanner: false,
     home: const Splash(),
   ));
@@ -38,7 +43,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const BottomNavBar()));
+          MaterialPageRoute(builder: (context) => const WhatsAppHome()));
     });
     super.initState();
   }
