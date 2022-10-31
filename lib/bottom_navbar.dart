@@ -79,7 +79,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         showUnselectedLabels: false,
         items: [
           BottomNavigationBarItem(
-              icon: const Icon(Icons.home_filled),
+              icon: const Icon(Icons.home_rounded),
               label: 'Home',
               backgroundColor: Colors.grey[100]),
           BottomNavigationBarItem(

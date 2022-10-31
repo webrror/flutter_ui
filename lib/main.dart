@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/Listview/listtest.dart';
 import 'package:flutter_application_1/Listview/lvseperator.dart';
 import 'package:flutter_application_1/Listview/movie_list_builder.dart';
 import 'package:flutter_application_1/bottom_navbar.dart';
@@ -16,10 +17,8 @@ import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/icon_park_twotone.dart';
 
 void main() {
-  runApp( MaterialApp(
-    theme: ThemeData(
-      primarySwatch: Colors.deepPurple
-    ),
+  runApp(MaterialApp(
+    theme: ThemeData(primarySwatch: Colors.deepPurple, useMaterial3: true),
     debugShowCheckedModeBanner: false,
     home: const Splash(),
   ));
@@ -39,8 +38,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(
-              builder: (context) => const BottomNavBar()));
+          MaterialPageRoute(builder: (context) => const BottomNavBar()));
     });
     super.initState();
   }
@@ -49,7 +47,9 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.dark,
+      
       child: Scaffold(
+        
         body: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
