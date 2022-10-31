@@ -3,7 +3,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/Listview/lvseperator.dart';
 import 'package:flutter_application_1/Listview/movie_list_builder.dart';
+import 'package:flutter_application_1/bottom_navbar.dart';
 import 'package:flutter_application_1/cards_sample.dart';
 import 'package:flutter_application_1/Listview/contact_list.dart';
 import 'package:flutter_application_1/login.dart';
@@ -38,7 +40,7 @@ class _SplashState extends State<Splash> {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-              builder: (context) => const CardsSample()));
+              builder: (context) => const BottomNavBar()));
     });
     super.initState();
   }
