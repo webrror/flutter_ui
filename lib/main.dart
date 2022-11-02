@@ -14,6 +14,7 @@ import 'package:flutter_application_1/Listview/listtest.dart';
 import 'package:flutter_application_1/Listview/lvseperator.dart';
 import 'package:flutter_application_1/Listview/movie_list_builder.dart';
 import 'package:flutter_application_1/Stack/stack.dart';
+import 'package:flutter_application_1/Stack/stack_profile_ui.dart';
 import 'package:flutter_application_1/Stack/stack_t1.dart';
 import 'package:flutter_application_1/Stack/stack_t2.dart';
 import 'package:flutter_application_1/Whatsapp/home.dart';
@@ -53,7 +54,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const StackTTwo()));
+          MaterialPageRoute(builder: (context) => const StackProfileUI()));
     });
     super.initState();
   }
