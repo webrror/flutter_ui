@@ -6,12 +6,16 @@ import 'package:flutter/services.dart';
 import 'package:flutter_application_1/GridView/gridview.dart';
 import 'package:flutter_application_1/GridView/gridview_builder.dart';
 import 'package:flutter_application_1/GridView/gridview_count.dart';
+import 'package:flutter_application_1/GridView/gridview_custom.dart';
 import 'package:flutter_application_1/GridView/gridview_extent.dart';
 import 'package:flutter_application_1/GridView/gridview_t1.dart';
 import 'package:flutter_application_1/GridView/gridview_t2.dart';
 import 'package:flutter_application_1/Listview/listtest.dart';
 import 'package:flutter_application_1/Listview/lvseperator.dart';
 import 'package:flutter_application_1/Listview/movie_list_builder.dart';
+import 'package:flutter_application_1/Stack/stack.dart';
+import 'package:flutter_application_1/Stack/stack_t1.dart';
+import 'package:flutter_application_1/Stack/stack_t2.dart';
 import 'package:flutter_application_1/Whatsapp/home.dart';
 import 'package:flutter_application_1/bottom_navbar.dart';
 import 'package:flutter_application_1/cards_sample.dart';
@@ -49,7 +53,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => GridViewTOne()));
+          MaterialPageRoute(builder: (context) => const StackTTwo()));
     });
     super.initState();
   }
