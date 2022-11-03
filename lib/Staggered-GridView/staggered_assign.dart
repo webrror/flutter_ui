@@ -13,8 +13,8 @@ class StaggeredAssign extends StatelessWidget {
       StaggeredTile.count(1, 1.3),
       StaggeredTile.count(1, 2),
       StaggeredTile.count(1, 1.3),
-      // StaggeredTile.count(2, 1),
-      // StaggeredTile.count(2, 1),
+      StaggeredTile.count(1, 2),
+      StaggeredTile.count(1, 1.3),
     ];
 
     List<Tile> _tiles = const [
@@ -35,12 +35,12 @@ class StaggeredAssign extends StatelessWidget {
           subtitle: 'Wallpaper'),
       Tile(
           url:
-              'https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+              'https://images.unsplash.com/photo-1619639572420-e0eac8689c29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
           title: 'Wallpaper',
           subtitle: 'Wallpaper'),
       Tile(
           url:
-              'https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+              'https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
           title: 'Wallpaper',
           subtitle: 'Wallpaper')
     ];
@@ -86,16 +86,19 @@ class Tile extends StatelessWidget {
               height: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Text(
-                title,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                  Text(subtitle),
+                ],
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Text(subtitle),
             )
           ],
         ));
