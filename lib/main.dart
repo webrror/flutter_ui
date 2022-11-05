@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/Ecommerce/ecommerce_ui.dart';
 
 // Page Imports
 import 'package:flutter_application_1/GridView/gridview.dart';
@@ -21,6 +22,7 @@ import 'package:flutter_application_1/Stack/stack_t2.dart';
 import 'package:flutter_application_1/Staggered-GridView/staggered_assign.dart';
 import 'package:flutter_application_1/Staggered-GridView/staggeredgrid.dart';
 import 'package:flutter_application_1/Tables/table.dart';
+import 'package:flutter_application_1/Tabs/tab.dart';
 import 'package:flutter_application_1/Whatsapp/home.dart';
 import 'package:flutter_application_1/bottom_navbar.dart';
 import 'package:flutter_application_1/cards_sample.dart';
@@ -28,6 +30,8 @@ import 'package:flutter_application_1/Listview/contact_list.dart';
 import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/login_with_form.dart';
 import 'package:flutter_application_1/Listview/lvbuilder.dart';
+import 'package:flutter_application_1/scrollableappbar.dart';
+import 'package:flutter_application_1/transparentappbar.dart';
 import 'package:flutter_application_1/welcome.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/icon_park_twotone.dart';
@@ -37,8 +41,8 @@ void main() {
   runApp(MaterialApp(
     
     theme: ThemeData(
-      primarySwatch: Colors.teal,
-      useMaterial3: true,
+      primarySwatch: Colors.orange,
+      //useMaterial3: true,
     ),
     debugShowCheckedModeBanner: false,
     home: const Splash(),
@@ -59,7 +63,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const TableSample()));
+          MaterialPageRoute(builder: (context) => const EcommerceUi()));
     });
     super.initState();
   }
