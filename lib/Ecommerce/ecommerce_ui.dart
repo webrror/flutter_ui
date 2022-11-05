@@ -9,6 +9,8 @@ class EcommerceUi extends StatefulWidget {
 }
 
 class _EcommerceUiState extends State<EcommerceUi> {
+
+  // * BOTTOM NAVIGATION BAR LOGIC
   int currentIndex = 0;
   void onPress(int index) {
     setState(() {
@@ -16,6 +18,7 @@ class _EcommerceUiState extends State<EcommerceUi> {
     });
   }
 
+  // * DATA
   List buttons = [
     [
       const Icon(
@@ -81,10 +84,15 @@ class _EcommerceUiState extends State<EcommerceUi> {
       'iPhone X'
     ]
   ];
+
+  // * UI
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
+
+      // * APP BAR
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -129,6 +137,8 @@ class _EcommerceUiState extends State<EcommerceUi> {
           ),
         ],
       ),
+
+      // * BODY
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -340,6 +350,8 @@ class _EcommerceUiState extends State<EcommerceUi> {
           ],
         ),
       ),
+
+      // * BOTTOM NAVIGATION BAR
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.only(
             topRight: Radius.circular(30), topLeft: Radius.circular(30)),
