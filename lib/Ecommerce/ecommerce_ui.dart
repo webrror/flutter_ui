@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class EcommerceUi extends StatefulWidget {
   const EcommerceUi({super.key});
@@ -94,6 +95,7 @@ class _EcommerceUiState extends State<EcommerceUi> {
 
       // * APP BAR
       appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
         backgroundColor: Colors.transparent,
         elevation: 0,
         toolbarHeight: 70.0,
