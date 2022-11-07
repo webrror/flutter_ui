@@ -1,6 +1,6 @@
 # flutter_ui
 
-A new Flutter project showcasing different UI examples.
+Repository showcasing different UI examples using Flutter.
 
 ## Screenshots
 
