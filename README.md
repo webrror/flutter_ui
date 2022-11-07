@@ -21,7 +21,7 @@ A new Flutter project showcasing different UI examples.
   </tr>
 </table>
 
-### WhatsApp UI
+### WhatsApp iOS UI
 
 
 <table>
@@ -37,3 +37,16 @@ A new Flutter project showcasing different UI examples.
 
   </tr>
 </table>
+
+
+<table>
+  <tr>
+    <td align="center">Profile UI</td>
+    <td align="center">E-commerce Home UI</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/profileuistack.png" width=200></td>
+    <td align="center"><img src="screenshots/ecommerceui.png" width=200></td>
+  </tr>
+</table>
+
