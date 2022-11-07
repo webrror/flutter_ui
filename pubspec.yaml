@@ -39,6 +39,7 @@ dependencies:
   fluttertoast: ^8.1.1
   staggered_grid_view_flutter: ^0.0.4
   lottie: ^1.4.3
+  iconify_flutter: ^0.0.5
 
 dev_dependencies:
   flutter_test:

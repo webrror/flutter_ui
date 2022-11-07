@@ -11,10 +11,6 @@ class Welcome extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.dark,
       child: Scaffold(
-          // appBar: AppBar(
-          //   backgroundColor: Colors.transparent,
-          //   elevation: 0,
-          // ),
           body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
