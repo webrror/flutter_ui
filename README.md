@@ -46,7 +46,7 @@ A new Flutter project showcasing different UI examples.
   </tr>
   <tr>
     <td align="center"><img src="screenshots/profileuistack.png" width=200></td>
-    <td align="center"><img src="screenshots/ecommerceui.png" width=200></td>
+    <td align="center"><img src="screenshots/gifs/ecommui.gif" width=200></td>
   </tr>
 </table>
 
