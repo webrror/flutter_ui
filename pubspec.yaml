@@ -41,6 +41,7 @@ dependencies:
   lottie: ^1.4.3
   iconify_flutter: ^0.0.5
   flutter_svg: ^1.1.6
+  quickalert: ^1.0.0
 
 dev_dependencies:
   flutter_test:
