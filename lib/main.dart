@@ -24,6 +24,7 @@ import 'package:flutter_application_1/Staggered-GridView/staggeredgrid.dart';
 import 'package:flutter_application_1/Tables/table.dart';
 import 'package:flutter_application_1/Tabs/tab.dart';
 import 'package:flutter_application_1/Whatsapp/home.dart';
+import 'package:flutter_application_1/alignwidget.dart';
 import 'package:flutter_application_1/animation.dart';
 import 'package:flutter_application_1/bottom_navbar.dart';
 import 'package:flutter_application_1/cards_sample.dart';
@@ -31,6 +32,7 @@ import 'package:flutter_application_1/Listview/contact_list.dart';
 import 'package:flutter_application_1/checkbox.dart';
 import 'package:flutter_application_1/checkboxlist.dart';
 import 'package:flutter_application_1/expansiontile.dart';
+import 'package:flutter_application_1/inkwell.dart';
 import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/login_with_form.dart';
 import 'package:flutter_application_1/Listview/lvbuilder.dart';
@@ -67,7 +69,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const CheckBoxList()));
+          MaterialPageRoute(builder: (context) => const Inkewell()));
     });
     super.initState();
   }
