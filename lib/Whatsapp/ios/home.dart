@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Whatsapp/screens/calls.dart';
-import 'package:flutter_application_1/Whatsapp/screens/chats.dart';
-import 'package:flutter_application_1/Whatsapp/screens/status.dart';
+import 'package:flutter_application_1/Whatsapp/ios/screens/calls.dart';
+import 'package:flutter_application_1/Whatsapp/ios/screens/chats.dart';
+import 'package:flutter_application_1/Whatsapp/ios/screens/status.dart';
 
 class WhatsAppHome extends StatefulWidget {
   const WhatsAppHome({super.key});

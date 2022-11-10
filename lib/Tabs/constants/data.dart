@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -101,9 +99,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
       'Mark',
-      Icon(
+      const Icon(
         CupertinoIcons.phone_fill,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Incoming',
@@ -112,9 +110,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2864&q=80',
       'Sam',
-      Icon(
+      const Icon(
         CupertinoIcons.phone_fill,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Outgoing',
@@ -123,9 +121,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2864&q=80',
       'Sam',
-      Icon(
+      const Icon(
         CupertinoIcons.phone_fill,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Missed',
@@ -134,9 +132,9 @@ class AllData {
     [
       'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
       'Francis',
-      Icon(
+      const Icon(
         CupertinoIcons.video_camera_solid,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Outgoing',
@@ -145,9 +143,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80',
       'Maya',
-      Icon(
+      const Icon(
         CupertinoIcons.phone_fill,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Incoming',
@@ -156,9 +154,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
       'Tim',
-      Icon(
+      const Icon(
         CupertinoIcons.video_camera_solid,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Outgoing',
@@ -167,9 +165,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
       'Tim',
-      Icon(
+      const Icon(
         CupertinoIcons.video_camera_solid,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Missed',
@@ -178,9 +176,9 @@ class AllData {
     [
       'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
       'Tim',
-      Icon(
+      const Icon(
         CupertinoIcons.video_camera_solid,
-        color: Platform.isIOS ? Colors.white70 : Colors.black54,
+        color: Colors.white70,
         size: 17,
       ),
       'Missed',

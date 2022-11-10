@@ -22,8 +22,8 @@ import 'package:flutter_application_1/Stack/stack_t2.dart';
 import 'package:flutter_application_1/Staggered-GridView/staggered_assign.dart';
 import 'package:flutter_application_1/Staggered-GridView/staggeredgrid.dart';
 import 'package:flutter_application_1/Tables/table.dart';
-import 'package:flutter_application_1/Tabs/tab.dart';
-import 'package:flutter_application_1/Whatsapp/home.dart';
+import 'package:flutter_application_1/Whatsapp/android/tab.dart';
+import 'package:flutter_application_1/Whatsapp/ios/home.dart';
 import 'package:flutter_application_1/alignwidget.dart';
 import 'package:flutter_application_1/animation.dart';
 import 'package:flutter_application_1/bottom_navbar.dart';
@@ -47,7 +47,7 @@ void main() {
   runApp(MaterialApp(
     
     theme: ThemeData(
-      primarySwatch: Colors.orange,
+      primarySwatch: Colors.teal,
       //useMaterial3: true,
     ),
     debugShowCheckedModeBanner: false,
@@ -69,7 +69,7 @@ class _SplashState extends State<Splash> {
       //Navigator.pushNamed(context, routeName);
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const Inkewell()));
+          MaterialPageRoute(builder: (context) => const Tabs()));
     });
     super.initState();
   }
