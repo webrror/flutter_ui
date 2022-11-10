@@ -41,9 +41,26 @@ Repository showcasing different UI examples using Flutter.
     <td align="center">Calls</td>
   </tr>
   <tr>
-    <td align="center"><img src="screenshots/whatsapp/chats.png" width=200></td>
-    <td align="center"><img src="screenshots/whatsapp/status.png" width=200></td>
-    <td align="center"><img src="screenshots/whatsapp/calls.png" width=200></td>
+    <td align="center"><img src="screenshots/whatsapp/ios/chats.png" width=200></td>
+    <td align="center"><img src="screenshots/whatsapp/ios/status.png" width=200></td>
+    <td align="center"><img src="screenshots/whatsapp/ios/calls.png" width=200></td>
+
+  </tr>
+</table>
+
+### WhatsApp Android UI
+
+
+<table>
+  <tr>
+    <td align="center">Chats</td>
+    <td align="center">Status</td>
+    <td align="center">Calls</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/whatsapp/android/chats.png" width=200></td>
+    <td align="center"><img src="screenshots/whatsapp/android/status.png" width=200></td>
+    <td align="center"><img src="screenshots/whatsapp/android/calls.png" width=200></td>
 
   </tr>
 </table>
