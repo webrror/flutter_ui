@@ -9,6 +9,28 @@ class StatusScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor: Colors.black,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: () {},
+            mini: true,
+            backgroundColor: Colors.white,
+            child: const Icon(
+              Icons.edit,
+              color: Colors.grey,
+            ),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          FloatingActionButton(
+            onPressed: () {},
+            child: const Icon(Icons.camera_alt),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
