@@ -22,45 +22,46 @@ class Product extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Name',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: SizedBox(
+                width: double.infinity,
+                height: 300,
+                child: Image.network(
+                  product["image"],
+                  fit: BoxFit.cover,
                 ),
-                Text(product["name"], style: const TextStyle(fontSize: 20))
-              ],
+              ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Price',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                ),
-                Text("₹${product["price"]}",
-                    style: const TextStyle(fontSize: 20))
-              ],
+            Text(product["name"], style: const TextStyle(fontSize: 20)),
+            const SizedBox(
+              height: 10,
             ),
+            Text("₹${product["price"]}",
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             const SizedBox(
               height: 20,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Description',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                ),
-                Text(product["desc"], style: const TextStyle(fontSize: 20))
-              ],
+
+            const Text(
+              'Description',
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black45),
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10.0),
+              child:
+                  Text(product["desc"], style: const TextStyle(fontSize: 20)),
+            )
+            
           ],
         ),
       ),

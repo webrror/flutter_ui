@@ -16,13 +16,69 @@ class ProductList extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: ListView(
+        // child: GridView.builder(
+        //   itemCount: products.length,
+        //   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        //       crossAxisCount: 2, mainAxisExtent: 250),
+        //   itemBuilder: (context, index) {
+        //     return Card(
+        //       child: Column(
+        //         children: [
+        //           Container(),
+        //           Text()
+        //         ],
+        //       ),
+        //     );
+        //   },
+        // ),
+        child: GridView(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2, mainAxisExtent: 250),
           children: products.map((product) {
-            return TextButton(
-                onPressed: () {
-                  goToProduct(context, product['id']);
-                },
-                child: Text(product['name']));
+            return GestureDetector(
+              onTap: () {
+                goToProduct(context, product['id']);
+              },
+              child: Card(
+                child: Column(
+                  children: [
+                    Flexible(
+                      flex: 4,
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: NetworkImage(product["image"]))),
+                      ),
+                    ),
+                    Flexible(
+                      flex: 1,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(product["name"],
+                                style: const TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
+                            Text('₹${product["price"].toString()}',
+                                style: const TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold)),
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            );
+            // return TextButton(
+            //     onPressed: () {
+            //       goToProduct(context, product['id']);
+            //     },
+            //     child: Text(product['name']));
           }).toList(),
         ),
       ),
