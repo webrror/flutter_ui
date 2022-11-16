@@ -69,7 +69,7 @@ Repository showcasing different UI examples using Flutter.
 
 <table>
   <tr>
-    <td align="center">Profile UI</td>
+    <td align="center">Profile UI using Stack</td>
     <td align="center">E-commerce Home UI</td>
     <td align="center">Hotel Home UI</td>
    
@@ -78,6 +78,17 @@ Repository showcasing different UI examples using Flutter.
     <td align="center"><img src="screenshots/profileuistack.png" width=200></td>
     <td align="center"><img src="screenshots/gifs/ecommui.gif" width=200></td>
     <td align="center"><img src="screenshots/hotelui.png" width=200></td>
+    
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center">Profile UI</td>
+
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/gifs/profileui.gif" width=200></td>
     
   </tr>
 </table>
