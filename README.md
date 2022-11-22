@@ -97,3 +97,13 @@ Repository showcasing different UI examples using Flutter.
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td align="center">Animated Switcher UI</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/gifs/animatedswitcher.gif" width=200></td>
+    
+  </tr>
+</table>
+
