@@ -7,8 +7,8 @@
     <td align="center">With ShrinkWrap</td>
   </tr>
   <tr>
-    <td align="center"><img src="examples/shrinkfalse.png" width=200></td>
-    <td align="center"><img src="examples/shrinktrue.png" width=200></td>
+    <td align="center"><img src="examples/shrinkfalse.gif" width=200></td>
+    <td align="center"><img src="examples/shrinktrue.gif" width=200></td>
     
   </tr>
 </table>
