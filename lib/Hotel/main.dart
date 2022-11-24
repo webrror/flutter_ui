@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Hotel/details.dart';
 
 void main() {
   runApp(
@@ -102,7 +103,16 @@ class _HomeState extends State<Home> {
         elevation: 0,
       ),
       body: Column(
-        children: [CategoryButtons(buttons: buttons), const HotelCard()],
+        children: [
+          CategoryButtons(buttons: buttons),
+          GestureDetector(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Details(),
+                  )),
+              child: const HotelCard())
+        ],
       ),
     );
   }
