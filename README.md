@@ -100,9 +100,11 @@ Repository showcasing different UI examples using Flutter.
 <table>
   <tr>
     <td align="center">Animated Switcher UI</td>
+    <td align="center">YouTube UI</td>
   </tr>
   <tr>
     <td align="center"><img src="screenshots/gifs/animatedswitcher.gif" width=200></td>
+    <td align="center"><img src="screenshots/gifs/yt.gif" width=200></td>
     
   </tr>
 </table>
