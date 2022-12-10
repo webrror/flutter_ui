@@ -213,6 +213,8 @@ class _YoutubeBaseState extends State<YoutubeBase> {
                 icon: const Icon(
                   FluentIcons.add_circle_20_regular,
                 ),
+                highlightColor: Colors.transparent,
+                splashColor: Colors.transparent,
                 iconSize: 40,
               ),
               label: ''),

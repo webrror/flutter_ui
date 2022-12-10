@@ -18,7 +18,7 @@ class VideoCard extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: screenHeight * 0.28,
+            height: screenHeight * 0.27,
             width: screenWidth,
             decoration: BoxDecoration(
                 image: DecorationImage(
